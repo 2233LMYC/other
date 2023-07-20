@@ -63,7 +63,7 @@ extern float target_angle;
 extern float Direction[18];
 extern float Motor_speed_L;
 extern float Motor_speed_R;
-extern uint8_t  zhixing , xuanzhuan;
+extern uint8_t  zhixing , xuanzhuan ,xuanzhuan_start;
 
 extern int turn_cnt;
 
@@ -173,11 +173,9 @@ int main(void)
     sprintf((char*)sbuf,"%d  %d     ",ADC_Value[0],ADC_Value[1]);
     OLED_ShowString(0,5,(uint8_t*)sbuf,12);
     memset(sbuf,0,21);
-    sprintf((char*)sbuf,"trun_cnt: %d",turn_cnt);
+    sprintf((char*)sbuf,"trun_cnt: %d    ",turn_cnt);
     OLED_ShowString(0,6,(uint8_t*)sbuf,12);
 
-      HAL_Delay(200);
-      printf("wrgfwef");
 
     if(zhixing == 1)//直线行驶
     {
@@ -186,21 +184,24 @@ int main(void)
 
     else if(xuanzhuan == 1)//路口旋转
     {
-        HAL_Delay(600);//冲出赛道一丢丢
-        Motor(stop,0,0);//停车
-//        MPU_Init();
-        while (mpu_dmp_init());//等待陀螺仪初始化
-        yaw = 0;//偏航角清零
+        if(xuanzhuan_start == 1)
+        {
+            HAL_Delay(600);//冲出赛道一丢丢
+            Motor(stop,0,0);//停车
+            while (mpu_dmp_init());//等待陀螺仪初始化
+            yaw = 0;//偏航角清零
 
+            pid_motor_L.err_sum = 0;
+            pid_motor_R.err_sum = 0;
 
-        pid_motor_L.err_sum = 0;
-        pid_motor_R.err_sum = 0;
+            target_angle = Direction[turn_cnt];
+            pid_motor_R.target = Direction[turn_cnt];
+            pid_motor_L.target = Direction[turn_cnt];
 
-        target_angle = Direction[turn_cnt];
-        pid_motor_R.target = Direction[turn_cnt];
-        pid_motor_L.target = Direction[turn_cnt];
+            xuanzhuan_start = 0;
+            printf("角度已重置\r\n");
+        }
 
-        printf("角度已重置\r\n");
 
         if(yaw>80||yaw<-80)
         {

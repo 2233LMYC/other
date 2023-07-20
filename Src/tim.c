@@ -41,7 +41,7 @@ float Motor_speed_L = 0;
 float Motor_speed_R = 0;
 
 uint8_t  _10ms_flag ,_50ms_flag;
-uint8_t  zhixing , xuanzhuan;
+uint8_t  zhixing , xuanzhuan,xuanzhuan_start;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
@@ -67,6 +67,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
                 turn_cnt++;//ÍäµÀ¼ÆÊý++
                 turn_cnt %= 18;
                 xuanzhuan = 1;
+                xuanzhuan_start = 1;
                 zhixing   = 0;
             }
         }
