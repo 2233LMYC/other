@@ -21,24 +21,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4677f9e-ab56-46c5-ac85-821a230dfcc6" name="更改" comment="伟林ADC">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADC/myadc.c" beforeDir="false" afterPath="$PROJECT_DIR$/ADC/myadc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADC_XJ/ADC_XJ.c" beforeDir="false" afterPath="$PROJECT_DIR$/ADC_XJ/ADC_XJ.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/motor.h" afterDir="false" />
+    <list default="true" id="f4677f9e-ab56-46c5-ac85-821a230dfcc6" name="更改" comment="就差第9个角">
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/motor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/tim.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/4w.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4w.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/4w.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4w.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/4w.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4w.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/4w.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4w.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/ADC/myadc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/ADC/myadc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/ADC_XJ/ADC_XJ.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/ADC_XJ/ADC_XJ.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/Src/motor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/Src/motor.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/Src/tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/Src/tim.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/4w.elf.dir/compiler_depend.make" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689824918691</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="就差第9个角">
+      <created>1689837543616</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689837543616</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +259,7 @@
     <MESSAGE value="测试用" />
     <MESSAGE value="左边循迹检测不到" />
     <MESSAGE value="伟林ADC" />
-    <option name="LAST_COMMIT_MESSAGE" value="伟林ADC" />
+    <MESSAGE value="就差第9个角" />
+    <option name="LAST_COMMIT_MESSAGE" value="就差第9个角" />
   </component>
 </project>

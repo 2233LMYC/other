@@ -195,11 +195,11 @@ int main(void)
 
         if(ADC_Value[1] == 1 && ADC_Value[3] == 0)
         {
-            Motor(forward,default_dpeed+500,default_dpeed);
+            Motor(forward,default_dpeed+1000,default_dpeed);
         }
         else if(ADC_Value[1] == 0 && ADC_Value[3] == 1)
         {
-            Motor(forward,default_dpeed,default_dpeed+500);
+            Motor(forward,default_dpeed,default_dpeed+1000);
         }
         else
             Motor(forward,default_dpeed,default_dpeed);
@@ -209,7 +209,6 @@ int main(void)
     {
         if(xuanzhuan_start == 1)
         {
-
             HAL_Delay(600);//冲出赛道一丢丢
             Motor(stop,0,0);//停车
             while (mpu_dmp_init());//等待陀螺仪初始化
@@ -236,7 +235,7 @@ int main(void)
     if(_10ms_flag)//陀螺仪调整90°
     {
         _10ms_flag = 0;
-        if(yaw < (target_angle - 2.0) || yaw > (target_angle + 2.0))
+        if(yaw < (target_angle - 3.0) || yaw > (target_angle + 3.0))
         {
           if(Motor_speed_R > 0)
           {
