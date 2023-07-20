@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="4w"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/LMTX/code/car/4w/4w/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4w.elf">
+				<Option output="E:/LMTX/code/car/4w/4w/cmake-build-release/4w.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/LMTX/code/car/4w/4w/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Inc"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/mpu6050"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/printf"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/PID"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/oled_sim"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/ADC_XJ"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 4w.elf"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="4w.elf/fast">
+				<Option output="E:/LMTX/code/car/4w/4w/cmake-build-release/4w.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/LMTX/code/car/4w/4w/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Inc"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/mpu6050"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/printf"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/PID"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/oled_sim"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/ADC_XJ"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 4w.elf/fast"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/LMTX/code/car/4w/4w/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/LMTX/code/car/4w/4w/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/LMTX/code/car/4w/4w/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/LMTX/code/car/4w/4w/ADC_XJ/ADC_XJ.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/ADC_XJ/ADC_XJ.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/CMSIS/LICENSE.txt">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/PID/PID.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/PID/PID.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/STM32F103C8TX_FLASH.ld">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/adc.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/gpio.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/main.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/motor.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/stm32f1xx_hal_msp.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/stm32f1xx_it.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/syscalls.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/sysmem.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/system_stm32f1xx.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/tim.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Src/usart.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/Startup/startup_stm32f103c8tx.s">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/bsp_iic.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/bsp_iic.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/dmpKey.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/dmpmap.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/inv_mpu.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/inv_mpu.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/inv_mpu_dmp_motion_driver.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/inv_mpu_dmp_motion_driver.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/mpu6050.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/mpu6050/mpu6050.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/oled_sim/bmp.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/oled_sim/oled.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/oled_sim/oled.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/oled_sim/oledfont.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/printf/printf.h">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
