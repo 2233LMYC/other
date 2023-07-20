@@ -177,8 +177,6 @@ int main(void)
     OLED_ShowString(0,6,(uint8_t*)sbuf,12);
 
 
-      HAL_Delay(100);
-
     if(zhixing == 1)//Ö±ÏßÐÐÊ»
     {
         Motor(forward,default_dpeed,default_dpeed);
