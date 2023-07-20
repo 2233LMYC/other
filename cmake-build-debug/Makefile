@@ -128,6 +128,30 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\4w.elf.dir\build.make CMakeFiles/4w.elf.dir/build
 .PHONY : 4w.elf/fast
 
+ADC/myadc.obj: ADC/myadc.c.obj
+.PHONY : ADC/myadc.obj
+
+# target to build an object file
+ADC/myadc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4w.elf.dir\build.make CMakeFiles/4w.elf.dir/ADC/myadc.c.obj
+.PHONY : ADC/myadc.c.obj
+
+ADC/myadc.i: ADC/myadc.c.i
+.PHONY : ADC/myadc.i
+
+# target to preprocess a source file
+ADC/myadc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4w.elf.dir\build.make CMakeFiles/4w.elf.dir/ADC/myadc.c.i
+.PHONY : ADC/myadc.c.i
+
+ADC/myadc.s: ADC/myadc.c.s
+.PHONY : ADC/myadc.s
+
+# target to generate assembly for a file
+ADC/myadc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\4w.elf.dir\build.make CMakeFiles/4w.elf.dir/ADC/myadc.c.s
+.PHONY : ADC/myadc.c.s
+
 ADC_XJ/ADC_XJ.obj: ADC_XJ/ADC_XJ.c.obj
 .PHONY : ADC_XJ/ADC_XJ.obj
 
@@ -961,6 +985,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 4w.elf
+	@echo ... ADC/myadc.obj
+	@echo ... ADC/myadc.i
+	@echo ... ADC/myadc.s
 	@echo ... ADC_XJ/ADC_XJ.obj
 	@echo ... ADC_XJ/ADC_XJ.i
 	@echo ... ADC_XJ/ADC_XJ.s

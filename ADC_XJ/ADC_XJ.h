@@ -7,7 +7,7 @@
 
 void GET_ADC_Value(void);
 
-
+#define YX 2.0
 
 
 

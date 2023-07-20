@@ -49,9 +49,8 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-set(USER_INC mpu6050 printf PID oled_sim ADC_XJ)
-set(USER_SRC "mpu6050/*.*" "printf/*.*" "PID/*.*" "oled_sim/*.*" "ADC_XJ/*.*")
-
+set(USER_INC mpu6050 printf PID oled_sim ADC_XJ ADC)
+set(USER_SRC "mpu6050/*.*" "printf/*.*" "PID/*.*" "oled_sim/*.*" "ADC_XJ/*.*" "ADC/*.*")
 
 include_directories(Inc Drivers/STM32F1xx_HAL_Driver/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include ${USER_INC})
 

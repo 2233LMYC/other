@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "4w.elf"
   "4w.elf.manifest"
   "4w.elf.pdb"
+  "CMakeFiles/4w.elf.dir/ADC/myadc.c.obj"
+  "CMakeFiles/4w.elf.dir/ADC/myadc.c.obj.d"
   "CMakeFiles/4w.elf.dir/ADC_XJ/ADC_XJ.c.obj"
   "CMakeFiles/4w.elf.dir/ADC_XJ/ADC_XJ.c.obj.d"
   "CMakeFiles/4w.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"

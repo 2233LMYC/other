@@ -34,6 +34,8 @@
 #include "stdio.h"
 #include "ADC_XJ.h"
 #include "string.h"
+#include "myadc.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,7 +60,7 @@
 extern PID_struct pid_motor_L;
 extern PID_struct pid_motor_R;
 extern uint8_t  _10ms_flag ,_50ms_flag;
-extern int ADC_Value[5];
+extern int ADC_Value[2];
 extern float target_angle;
 extern float Direction[18];
 extern float Motor_speed_L;
@@ -144,9 +146,6 @@ int main(void)
   PID_Set(&pid_motor_L,target_angle,-250,-0.001,-0.5);
 
 
-
-
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -156,6 +155,20 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+      if(zhixing == 1)
+      {
+          ADC_Value_t();
+          if(ADC_Value[0] == 1 || ADC_Value[1] == 1)
+          {
+              turn_cnt++;//弯道计数++
+              turn_cnt %= 18;
+              xuanzhuan = 1;
+              xuanzhuan_start = 1;
+              zhixing   = 0;
+          }
+      }
+
 
     memset(sbuf,0,21);
     sprintf((char*)sbuf,"Now turn: %.1f",Direction[turn_cnt]);
@@ -201,7 +214,6 @@ int main(void)
             xuanzhuan_start = 0;
             printf("角度已重置\r\n");
         }
-
 
         if(yaw>80||yaw<-80)
         {

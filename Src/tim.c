@@ -32,7 +32,7 @@ extern int MOVE;
 extern PID_struct pid_motor_L;
 extern PID_struct pid_motor_R;
 
-extern int ADC_Value[5];
+extern int ADC_Value[2];
 extern int target_angle;
 
 int turn_cnt = 0;
@@ -59,18 +59,18 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
     if(cnt %20 == 0)
     {
-        if(zhixing == 1)
-        {
-            GET_ADC_Value();
-            if(ADC_Value[0] == 1 || ADC_Value[1] == 1)
-            {
-                turn_cnt++;//弯道计数++
-                turn_cnt %= 18;
-                xuanzhuan = 1;
-                xuanzhuan_start = 1;
-                zhixing   = 0;
-            }
-        }
+//        if(zhixing == 1)
+//        {
+//            GET_ADC_Value();
+//            if(ADC_Value[0] == 1 || ADC_Value[1] == 1)
+//            {
+//                turn_cnt++;//弯道计数++
+//                turn_cnt %= 18;
+//                xuanzhuan = 1;
+//                xuanzhuan_start = 1;
+//                zhixing   = 0;
+//            }
+//        }
     }
 
     if(cnt %50 == 0)

@@ -31,10 +31,12 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "E:/LMTX/code/car/4w/4w/PID"
   "E:/LMTX/code/car/4w/4w/oled_sim"
   "E:/LMTX/code/car/4w/4w/ADC_XJ"
+  "E:/LMTX/code/car/4w/4w/ADC"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/LMTX/code/car/4w/4w/ADC/myadc.c" "CMakeFiles/4w.elf.dir/ADC/myadc.c.obj" "gcc" "CMakeFiles/4w.elf.dir/ADC/myadc.c.obj.d"
   "E:/LMTX/code/car/4w/4w/ADC_XJ/ADC_XJ.c" "CMakeFiles/4w.elf.dir/ADC_XJ/ADC_XJ.c.obj" "gcc" "CMakeFiles/4w.elf.dir/ADC_XJ/ADC_XJ.c.obj.d"
   "E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "CMakeFiles/4w.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" "gcc" "CMakeFiles/4w.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d"
   "E:/LMTX/code/car/4w/4w/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" "CMakeFiles/4w.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj" "gcc" "CMakeFiles/4w.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj.d"

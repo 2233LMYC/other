@@ -37,6 +37,7 @@
 					<Add directory="E:/LMTX/code/car/4w/4w/PID"/>
 					<Add directory="E:/LMTX/code/car/4w/4w/oled_sim"/>
 					<Add directory="E:/LMTX/code/car/4w/4w/ADC_XJ"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/ADC"/>
 					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -71,6 +72,7 @@
 					<Add directory="E:/LMTX/code/car/4w/4w/PID"/>
 					<Add directory="E:/LMTX/code/car/4w/4w/oled_sim"/>
 					<Add directory="E:/LMTX/code/car/4w/4w/ADC_XJ"/>
+					<Add directory="E:/LMTX/code/car/4w/4w/ADC"/>
 					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -106,6 +108,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/LMTX/code/car/4w/4w/ADC/myadc.c">
+			<Option target="4w.elf"/>
+		</Unit>
+		<Unit filename="E:/LMTX/code/car/4w/4w/ADC/myadc.h">
+			<Option target="4w.elf"/>
+		</Unit>
 		<Unit filename="E:/LMTX/code/car/4w/4w/ADC_XJ/ADC_XJ.c">
 			<Option target="4w.elf"/>
 		</Unit>

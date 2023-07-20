@@ -1,5 +1,5 @@
-CMakeFiles/4w.elf.dir/Src/main.c.obj: E:\LMTX\code\car\4w\4w\Src\main.c \
- E:\LMTX\code\car\4w\4w\Inc/main.h \
+CMakeFiles/4w.elf.dir/ADC/myadc.c.obj: E:\LMTX\code\car\4w\4w\ADC\myadc.c \
+ E:\LMTX\code\car\4w\4w\ADC\myadc.h E:\LMTX\code\car\4w\4w\Inc/main.h \
  E:\LMTX\code\car\4w\4w\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal.h \
  E:\LMTX\code\car\4w\4w\Inc/stm32f1xx_hal_conf.h \
  E:\LMTX\code\car\4w\4w\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_rcc.h \
@@ -59,20 +59,5 @@ CMakeFiles/4w.elf.dir/Src/main.c.obj: E:\LMTX\code\car\4w\4w\Src\main.c \
  d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\sched.h \
  d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\types.h \
  d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h \
- E:\LMTX\code\car\4w\4w\Inc/adc.h E:\LMTX\code\car\4w\4w\Inc/main.h \
- E:\LMTX\code\car\4w\4w\Inc/tim.h E:\LMTX\code\car\4w\4w\Inc/usart.h \
- E:\LMTX\code\car\4w\4w\Inc/gpio.h E:\LMTX\code\car\4w\4w\printf/printf.h \
- E:\LMTX\code\car\4w\4w\mpu6050/mpu6050.h \
- E:\LMTX\code\car\4w\4w\mpu6050/bsp_iic.h \
- E:\LMTX\code\car\4w\4w\mpu6050/inv_mpu.h \
- E:\LMTX\code\car\4w\4w\PID/PID.h E:\LMTX\code\car\4w\4w\Inc/motor.h \
- E:\LMTX\code\car\4w\4w\oled_sim/oled.h \
- d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
- d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
- d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
- E:\LMTX\code\car\4w\4w\ADC_XJ/ADC_XJ.h \
- d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
- d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
- d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
- d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\string.h \
- E:\LMTX\code\car\4w\4w\ADC/myadc.h
+ E:\LMTX\code\car\4w\4w\Inc/gpio.h E:\LMTX\code\car\4w\4w\Inc/main.h \
+ E:\LMTX\code\car\4w\4w\Inc/adc.h E:\LMTX\code\car\4w\4w\ADC_XJ/ADC_XJ.h

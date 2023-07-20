@@ -5,7 +5,9 @@
 #include "main.h"
 #include "adc.h"
 
-int ADC_Value[5] = {0};
+
+
+int ADC_Value[2] = {0};
 
 #define YX 2.0
 
@@ -26,7 +28,7 @@ void GET_ADC_Value(void)
     {
       if(i == 1)
       {
-        if((float)(HAL_ADC_GetValue(&hadc1)*3.3/4096 + 0.7) > YX)
+        if((float)(HAL_ADC_GetValue(&hadc1)*3.3/4096) > YX)
           ADC_Value[i] = 0;
         else ADC_Value[i] = 1;
       }
@@ -40,3 +42,5 @@ void GET_ADC_Value(void)
   }
   HAL_ADC_Stop(&hadc1);
 }
+
+
