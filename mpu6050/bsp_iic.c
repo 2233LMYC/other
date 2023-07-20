@@ -207,7 +207,7 @@ uint8_t IIC_Wait_Ack(void)
 */
 void IIC_Ack(void)
 {
-    IIC_SCL_0();
+//    IIC_SCL_0();
     IIC_SDA_0();	/* CPU驱动SDA = 0 */
     IIC_Delay();
     IIC_SCL_1();	/* CPU产生1个时钟 */
