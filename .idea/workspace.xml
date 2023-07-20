@@ -21,7 +21,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4677f9e-ab56-46c5-ac85-821a230dfcc6" name="更改" comment="测试用" />
+    <list default="true" id="f4677f9e-ab56-46c5-ac85-821a230dfcc6" name="更改" comment="运行5s左右卡死">
+      <change beforePath="$PROJECT_DIR$/mpu6050/bsp_iic.c" beforeDir="false" afterPath="$PROJECT_DIR$/mpu6050/bsp_iic.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,9 +45,9 @@
         <option value="lmtx" />
       </list>
     </option>
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/mpu6050/bsp_iic.c" root0="FORCE_HIGHLIGHTING" />
@@ -128,7 +130,7 @@
       <workItem from="1689743539917" duration="4706000" />
       <workItem from="1689761580782" duration="6711000" />
       <workItem from="1689814173716" duration="3614000" />
-      <workItem from="1689817823745" duration="1971000" />
+      <workItem from="1689817823745" duration="974000" />
     </task>
     <task id="LOCAL-00001" summary="运行5s左右卡死">
       <created>1689818567042</created>
@@ -144,63 +146,7 @@
       <option name="project" value="LOCAL" />
       <updated>1689818790580</updated>
     </task>
-    <task id="LOCAL-00003" summary="运行5s左右卡死">
-      <created>1689818913313</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1689818913313</updated>
-    </task>
-    <task id="LOCAL-00004" summary="运行5s左右卡死">
-      <created>1689819106066</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819106066</updated>
-    </task>
-    <task id="LOCAL-00005" summary="运行5s左右卡死">
-      <created>1689819174656</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819174657</updated>
-    </task>
-    <task id="LOCAL-00006" summary="运行5s左右卡死">
-      <created>1689819240452</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819240452</updated>
-    </task>
-    <task id="LOCAL-00007" summary="运行5s左右卡死">
-      <created>1689819476651</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819476651</updated>
-    </task>
-    <task id="LOCAL-00008" summary="运行5s左右卡死">
-      <created>1689819606577</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819606577</updated>
-    </task>
-    <task id="LOCAL-00009" summary="测试用">
-      <created>1689819632773</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819632773</updated>
-    </task>
-    <task id="LOCAL-00010" summary="测试用">
-      <created>1689819697393</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819697393</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +181,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="运行5s左右卡死" />
-    <MESSAGE value="测试用" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试用" />
+    <option name="LAST_COMMIT_MESSAGE" value="运行5s左右卡死" />
   </component>
 </project>
