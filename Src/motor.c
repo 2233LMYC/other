@@ -13,10 +13,12 @@ extern int ADC_Value[5];
 int MOVE = 0;
 
 float target_angle = 0;
-float Direction[19] = {0,90,90,-90,-90,90,-90,90,-90,90,-90,90,-90,90,-90,90,90,-90,-90};
+float Direction[20] = {0,90,90,-90,-90,90,-90,90,-90,\
+                  0,90,-90,90,-90,90,-90,90,90,-90,-90};
 extern PID_struct pid_motor_L;
 extern PID_struct pid_motor_R;
 extern int turn_cnt;
+
 
 
 void MOTOR_L_F(int speedl)
@@ -93,7 +95,7 @@ void Car_Turn(float angle)
     }
     while(yaw < (angle - 2.0) || yaw > (angle + 2.0))
     {
-
+        ;
     }
 
 }

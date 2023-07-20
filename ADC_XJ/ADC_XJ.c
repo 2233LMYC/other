@@ -7,7 +7,7 @@
 
 
 
-int ADC_Value[2] = {0};
+int ADC_Value[5] = {0};
 
 #define YX 2.0
 

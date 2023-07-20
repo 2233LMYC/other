@@ -60,16 +60,16 @@
 extern PID_struct pid_motor_L;
 extern PID_struct pid_motor_R;
 extern uint8_t  _10ms_flag ,_50ms_flag;
-extern int ADC_Value[2];
+extern int ADC_Value[5];
 extern float target_angle;
-extern float Direction[18];
+extern float Direction[21];
 extern float Motor_speed_L;
 extern float Motor_speed_R;
 extern uint8_t  zhixing , xuanzhuan ,xuanzhuan_start;
 
 extern int turn_cnt;
 
-uint8_t sbuf[21] = {0};
+uint8_t sbuf[20] = {0};
 
 /* USER CODE END PV */
 
@@ -158,48 +158,58 @@ int main(void)
 
       if(zhixing == 1)
       {
-
           ADC_Value_t();
-          if(ADC_Value[0] == 1 || ADC_Value[1] == 1)
+          if(ADC_Value[0] == 1 || ADC_Value[4] == 1)
           {
               turn_cnt++;//弯道计数++
-              turn_cnt %= 18;
+              turn_cnt %=20;
               xuanzhuan = 1;
               xuanzhuan_start = 1;
               zhixing   = 0;
+
           }
       }
 
-
-    memset(sbuf,0,21);
+    memset(sbuf,0,20);
     sprintf((char*)sbuf,"Now turn: %.1f",Direction[turn_cnt]);
     OLED_ShowString(0,0,sbuf,12);
-    memset(sbuf,0,21);
+    memset(sbuf,0,20);
     sprintf((char*)sbuf,"yaw: %.2f",yaw);
     OLED_ShowString(0,1,(uint8_t*)sbuf,12);
-    memset(sbuf,0,21);
+    memset(sbuf,0,20);
     sprintf((char*)sbuf,"pid_L:%d",(int)Motor_speed_L);
     OLED_ShowString(0,2,(uint8_t*)sbuf,12);
-    memset(sbuf,0,21);
+    memset(sbuf,0,20);
     sprintf((char*)sbuf,"pid_R:%d",(int)Motor_speed_R);
     OLED_ShowString(0,3,(uint8_t*)sbuf,12);
-    memset(sbuf,0,21);
-    sprintf((char*)sbuf,"%d  %d     ",ADC_Value[0],ADC_Value[1]);
+    memset(sbuf,0,20);
+    sprintf((char*)sbuf,"%d  %d  %d  %d  %d",ADC_Value[0],ADC_Value[1],ADC_Value[2],ADC_Value[3],ADC_Value[4]);
     OLED_ShowString(0,5,(uint8_t*)sbuf,12);
-    memset(sbuf,0,21);
+    memset(sbuf,0,20);
     sprintf((char*)sbuf,"trun_cnt: %d    ",turn_cnt);
     OLED_ShowString(0,6,(uint8_t*)sbuf,12);
 
 
     if(zhixing == 1)//直线行驶
     {
-        Motor(forward,default_dpeed,default_dpeed);
+
+        if(ADC_Value[1] == 1 && ADC_Value[3] == 0)
+        {
+            Motor(forward,default_dpeed+500,default_dpeed);
+        }
+        else if(ADC_Value[1] == 0 && ADC_Value[3] == 1)
+        {
+            Motor(forward,default_dpeed,default_dpeed+500);
+        }
+        else
+            Motor(forward,default_dpeed,default_dpeed);
     }
 
     else if(xuanzhuan == 1)//路口旋转
     {
         if(xuanzhuan_start == 1)
         {
+
             HAL_Delay(600);//冲出赛道一丢丢
             Motor(stop,0,0);//停车
             while (mpu_dmp_init());//等待陀螺仪初始化
@@ -216,14 +226,14 @@ int main(void)
             printf("角度已重置\r\n");
         }
 
-        if(yaw>80||yaw<-80)
+        if(yaw>80||yaw<-80||turn_cnt == 9)
         {
             xuanzhuan = 0;
             zhixing = 1;
         }
     }
 
-    if(_10ms_flag)//微调角度
+    if(_10ms_flag)//陀螺仪调整90°
     {
         _10ms_flag = 0;
         if(yaw < (target_angle - 2.0) || yaw > (target_angle + 2.0))
@@ -244,6 +254,7 @@ int main(void)
           {
             MOTOR_L_B((int)(-Motor_speed_L));
           }
+
         }
     }
   }

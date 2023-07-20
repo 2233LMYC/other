@@ -2,8 +2,8 @@
 #include "adc.h"
 #include "ADC_XJ.h"
 
-extern int ADC_Value[2];
-
+extern int ADC_Value[5];
+int chanel[5] = {0,1,4,5,8};
 
 //  只用通道0 1 4 5 8
 double Get_Adc(uint8_t Channel)
@@ -23,21 +23,11 @@ double Get_Adc(uint8_t Channel)
 
 void ADC_Value_t(void)
 {
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 5; i++)
     {
-        if(i == 0)
-        {
-            if((float)(Get_Adc(8)) > YX)
-                ADC_Value[i] = 0;
-            else ADC_Value[i] = 1;
-        }
-        else
-        {
-            if((float)(Get_Adc(0)) > YX)
-                ADC_Value[i] = 0;
-            else ADC_Value[i] = 1;
-        }
-
+        if((float)(Get_Adc(chanel[i])) > YX)
+            ADC_Value[i] = 0;
+        else ADC_Value[i] = 1;
     }
 }
 
