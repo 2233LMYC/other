@@ -176,6 +176,8 @@ int main(void)
     sprintf((char*)sbuf,"trun_cnt: %d",turn_cnt);
     OLED_ShowString(0,6,(uint8_t*)sbuf,12);
 
+      HAL_Delay(200);
+      printf("wrgfwef");
 
     if(zhixing == 1)//Ö±ÏßÐÐÊ»
     {
