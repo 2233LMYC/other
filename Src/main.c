@@ -158,6 +158,7 @@ int main(void)
 
       if(zhixing == 1)
       {
+
           ADC_Value_t();
           if(ADC_Value[0] == 1 || ADC_Value[1] == 1)
           {
