@@ -186,7 +186,7 @@ int main(void)
     {
         HAL_Delay(600);//冲出赛道一丢丢
         Motor(stop,0,0);//停车
-        MPU_Init();
+//        MPU_Init();
         while (mpu_dmp_init());//等待陀螺仪初始化
         yaw = 0;//偏航角清零
 
