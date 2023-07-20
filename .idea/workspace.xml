@@ -21,9 +21,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4677f9e-ab56-46c5-ac85-821a230dfcc6" name="更改" comment="运行5s左右卡死">
-      <change beforePath="$PROJECT_DIR$/mpu6050/bsp_iic.c" beforeDir="false" afterPath="$PROJECT_DIR$/mpu6050/bsp_iic.c" afterDir="false" />
-    </list>
+    <list default="true" id="f4677f9e-ab56-46c5-ac85-821a230dfcc6" name="更改" comment="运行5s左右卡死" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +128,7 @@
       <workItem from="1689743539917" duration="4706000" />
       <workItem from="1689761580782" duration="6711000" />
       <workItem from="1689814173716" duration="3614000" />
-      <workItem from="1689817823745" duration="974000" />
+      <workItem from="1689817823745" duration="1296000" />
     </task>
     <task id="LOCAL-00001" summary="运行5s左右卡死">
       <created>1689818567042</created>
@@ -146,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689818790580</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="运行5s左右卡死">
+      <created>1689818913313</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689818913313</updated>
+    </task>
+    <task id="LOCAL-00004" summary="运行5s左右卡死">
+      <created>1689819106066</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689819106066</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
