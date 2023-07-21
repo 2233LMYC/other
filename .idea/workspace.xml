@@ -21,7 +21,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4677f9e-ab56-46c5-ac85-821a230dfcc6" name="更改" comment="就差第9个角">
+    <list default="true" id="f4677f9e-ab56-46c5-ac85-821a230dfcc6" name="更改" comment="完成，但有瑕疵">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/4w.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4w.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/4w.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/4w.elf" afterDir="false" />
@@ -199,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689837543616</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成，但有瑕疵">
+      <created>1689838890180</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689838890180</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +268,7 @@
     <MESSAGE value="左边循迹检测不到" />
     <MESSAGE value="伟林ADC" />
     <MESSAGE value="就差第9个角" />
-    <option name="LAST_COMMIT_MESSAGE" value="就差第9个角" />
+    <MESSAGE value="完成，但有瑕疵" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成，但有瑕疵" />
   </component>
 </project>

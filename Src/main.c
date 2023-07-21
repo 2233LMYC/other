@@ -235,7 +235,7 @@ int main(void)
     if(_10ms_flag)//ÍÓÂİÒÇµ÷Õû90¡ã
     {
         _10ms_flag = 0;
-        if(yaw < (target_angle - 3.0) || yaw > (target_angle + 3.0))
+        if(yaw < (target_angle - 10.0) || yaw > (target_angle + 10.0))
         {
           if(Motor_speed_R > 0)
           {
